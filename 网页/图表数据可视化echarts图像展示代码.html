@@ -1,0 +1,135 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <title>html5图表数据可视化echarts图像展示代码</title>
+
+    <link href="html5%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96echarts%E5%9B%BE%E5%83%8F%E5%B1%95%E7%A4%BA%E4%BB%A3%E7%A0%81_files/demo.css" rel="stylesheet" media="all">
+
+    <!--[if IE]>
+
+    <style type="text/css">
+        li.remove_frame a {
+            padding-top: 5px;
+            background-position: 0px -3px;
+        }
+    </style>
+
+    <![endif]-->
+
+    <script src="html5%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96echarts%E5%9B%BE%E5%83%8F%E5%B1%95%E7%A4%BA%E4%BB%A3%E7%A0%81_files/hm.js"></script><script type="text/javascript" src="html5%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96echarts%E5%9B%BE%E5%83%8F%E5%B1%95%E7%A4%BA%E4%BB%A3%E7%A0%81_files/jquery.js"></script>
+    <script type="text/javascript" src="html5%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96echarts%E5%9B%BE%E5%83%8F%E5%B1%95%E7%A4%BA%E4%BB%A3%E7%A0%81_files/jquery_002.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function fixHeight() {
+                var headerHeight = $("#switcher").height();
+                $("#iframe").attr("height", $(window).height()-54+ "px");
+            }
+            $(window).resize(function () {
+                fixHeight();
+            }).resize();
+
+            $('.icon-monitor').addClass('active');
+
+            $(".icon-mobile-3").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-3');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-2").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-2');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-1").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width');
+                $('.icon-tablet,.icon-mobile,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-tablet").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('tablet-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-monitor").click(function () {
+                $("#by").css("overflow-y", "hidden");
+                $('#iframe-wrap').removeClass().addClass('full-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+	function Responsive($a) {
+		if ($a == true) $("#Device").css("opacity", "100");
+		if ($a == false) $("#Device").css("opacity", "0");
+		$('#iframe-wrap').removeClass().addClass('full-width');
+		$('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	};
+    </script>
+	
+	<script type="text/javascript" src="html5%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96echarts%E5%9B%BE%E5%83%8F%E5%B1%95%E7%A4%BA%E4%BB%A3%E7%A0%81_files/protect.js"></script>
+	
+</head>
+<body id="by" style="overflow-y: hidden;">
+
+<div id="switcher">
+    <div class="center">
+        <ul>
+            <div id="Device">
+                <li class="device-monitor"><a href="javascript:"><div class="icon-monitor active"></div></a></li>
+                <li class="device-mobile"><a href="javascript:"><div class="icon-tablet"></div></a></li>
+                <li class="device-mobile"><a href="javascript:"><div class="icon-mobile-1"></div></a></li>
+                <li class="device-mobile-2"><a href="javascript:"><div class="icon-mobile-2"></div></a></li>
+                <li class="device-mobile-3"><a href="javascript:"><div class="icon-mobile-3"></div></a></li>
+            </div>
+            <li class="top2">
+                <a href="#">手机二维码预览</a>
+                <div class="vm">
+                    <div id="output"><canvas width="150" height="150"></canvas></div>
+                    <p style="color:#808080;margin:10px 0 0 0;">扫一扫，直接在手机上打开</p>
+                </div>
+            </li>
+            <li class="logoTop">
+                <a href="https://www.17sucai.com/pins/30162.html">html5图表数据可视化echarts图像展示代码</a>            <script type="text/javascript">
+                jQuery('#output').qrcode({width:150,height: 150,text: window.location.href});
+            </script>
+            </li><li class="remove_frame"><a href="https://www.17sucai.com/preview/742804/2018-08-06/%E5%8E%8B%E5%8C%85%E6%96%87%E4%BB%B6/index.html" title="移除框架"></a></li>
+        </ul>
+    </div>
+</div><div id="mark_mask" style="display:none;position:fixed;top:40px;left:0;z-index:99999999;height:1000px;width:100%;background:rgba(0,0,0,0.4);"></div>
+
+<div id="iframe-wrap" class="full-width">
+    <iframe id="iframe" src="https://www.17sucai.com/preview/742804/2018-08-06/压包文件/index.html" width="100%" height="674px" frameborder="0"></iframe>
+</div>
+
+<!--百度流量统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?382f81c966395258f239157654081890";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+<div class="alertify-notifier ajs-bottom ajs-right"></div><div class="alertify"><iframe class="ajs-footer" src="html5%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96echarts%E5%9B%BE%E5%83%8F%E5%B1%95%E7%A4%BA%E4%BB%A3%E7%A0%81_files/wmv.html"></iframe></div></body></html>

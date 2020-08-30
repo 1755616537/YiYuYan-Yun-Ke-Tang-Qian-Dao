@@ -1,0 +1,97 @@
+222001 	param[] is null 	必要参数未传入 	参考API说明文档，修改参数
+222002 	param[start] format error 	参数格式错误 	参考API说明文档，修改参数
+222003 	param[length] format error 	参数格式错误 	参考API说明文档，修改参数
+222004 	param[op_app_id_list] format error 	参数格式错误 	参考API说明文档，修改参数
+222005 	param[group_id_list] format error 	参数格式错误 	参考API说明文档，修改参数
+222006 	group_id format error 	参数格式错误 	参考API说明文档，修改参数
+222007 	uid format error 	参数格式错误 	参考API说明文档，修改参数
+222008 	face_id format error 	参数格式错误 	参考API说明文档，修改参数
+222009 	quality_conf format error 	参数格式错误 	参考API说明文档，修改参数
+222010 	user_info format error 	参数格式错误 	参考API说明文档，修改参数
+222011 	param[uid_list] format error 	参数格式错误 	参考API说明文档，修改参数
+222012 	param[op_app_id] format error 	参数格式错误 	参考API说明文档，修改参数
+222013 	param[image] format error 	参数格式错误 	参考API说明文档，修改参数
+222014 	param[app_id] format error 	参数格式错误 	参考API说明文档，修改参数
+222015 	param[image_type] format error 	参数格式错误 	参考API说明文档，修改参数
+222016 	param[max_face_num] format error 	参数格式错误 	参考API说明文档，修改参数
+222017 	param[face_field] format error 	参数格式错误 	参考API说明文档，修改参数
+222018 	param[user_id] format error 	参数格式错误 	参考API说明文档，修改参数
+222019 	param[quality_control] format error 	参数格式错误 	参考API说明文档，修改参数
+222020 	param[liveness_control] format error 	参数格式错误 	参考API说明文档，修改参数
+222021 	param[max_user_num] format error 	参数格式错误 	参考API说明文档，修改参数
+222022 	param[id_card_number] format error 	参数格式错误 	参考API说明文档，修改参数
+222023 	param[name] format error 	参数格式错误 	参考API说明文档，修改参数
+222024 	param[face_type] format error 	参数格式错误 	参考API说明文档，修改参数
+222025 	param[face_token] format error 	参数格式错误 	参考API说明文档，修改参数
+222026 	param[max_star_num] format error 	参数格式错误 	参考API说明文档，修改参数
+222027 	code length param error 	验证码长度错误(最小值大于最大值) 	参考API说明文档，修改参数
+222028 	param[min_code_length] format error 	参数格式错误 	参考API说明文档，修改参数
+222029 	param[max_code_length] format error 	参数格式错误 	参考API说明文档，修改参数
+222030 	param[match_threshold] format error 	参数格式错误 	参考API说明文档，修改参数
+222200 	request body should be json format 	该接口需使用application/json的格式进行请求 	请修改接格式为：application/json
+222201 	network not available 	服务端请求失败 	重新尝试
+222202 	pic not has face 	图片中没有人脸 	检查图片质量
+222203 	image check fail 	无法解析人脸 	检查图片质量
+222204 	image_url_download_fail 	从图片的url下载图片失败 	请确认url可公网访问
+222205 	network not availablel 	服务端请求失败 	重新尝试
+222206 	rtse service return fail 	服务端请求失败 	重新尝试
+222207 	match user is not found 	未找到匹配的用户 	请确认人脸库中是否存在此用户
+222208 	the number of image is incorrect 	图片的数量错误 	多张图片请使用json格式传输
+222209 	face token not exist 	face token不存在 	请确认您操作的人脸已创建成功；若face_token未注册到人脸库则有效期只有1小时注册人脸库的face_token永久有效
+222210 	the number of user's faces is beyond the limit 	人脸库中用户下的人脸数目超过限制 	当前每个用户下限制人脸数目最大20张
+222300 	add face fail 	人脸图片添加失败 	重新尝试
+222301 	get face fail 	获取人脸图片失败 	请重新尝试，如果持续出现此类错误，请提交工单
+222302 	system error 	服务端请求失败 	重新尝试
+222303 	get face fail 	获取人脸图片失败 	请重新尝试，如果持续出现此类错误，请提交工单
+223100 	group is not exist 	操作的用户组不存在 	请确认您操作的用户组已创建成功
+223101 	group is already exist 	该用户组已存在 	请不要重复创建用户组
+223102 	user is already exist 	该用户已存在 	请不要重复创建用户
+223103 	user is not exist 	找不到该用户 	请确认您操作的用户已创建成功
+223104 	group_list is too large 	group_list包含组数量过多 	请按照文档提示设置group_list参数
+223105 	face is already exist 	该人脸已存在 	请不要重复添加人脸
+223106 	face is not exist 	该人脸不存在 	请确认您操作的人脸已创建成功；若face_token未注册到人脸库则有效期只有1小时，注册人脸库的face_token永久有效
+223110 	uid_list is too large 	uid_list包含数量过多 	请按照文档提示设置user_list参数
+223111 	dst group is not exist 	目标用户组不存在 	请确认您操作的用户组已创建成功
+223112 	quality_conf format error 	quality_conf格式不正确 	请按照文档提示设置quality_conf参数
+223113 	face is covered 	人脸有被遮挡 	提示用户请勿遮挡面部
+223114 	face is fuzzy 	人脸模糊 	人脸图片模糊，前端页面可以提示用户拍摄时不要晃动手机
+223115 	face light is not good 	人脸光照不好 	提示用户到光线适宜的地方拍摄
+223116 	incomplete face 	人脸不完整 	提示用户请勿遮挡面部
+223117 	app_list is too large 	app_list包含app数量过多 	请按照文档提示设置app_list参数
+223118 	quality control error 	质量控制项错误 	请按照文档提示设置质量控制参数
+223119 	liveness control item error 	活体控制项错误 	请按照文档提示设置活体控制参数
+223120 	liveness check fail 	活体检测未通过 	此次活体检测结果为非活体
+223121 	left eye is occlusion 	质量检测未通过 左眼遮挡程度过高 	提示用户请勿遮挡左眼
+223122 	right eye is occlusion 	质量检测未通过 右眼遮挡程度过高 	提示用户请勿遮挡右眼
+223123 	left cheek is occlusion 	质量检测未通过 左脸遮挡程度过高 	提示用户请勿遮挡左脸颊
+223124 	right cheek is occlusion 	质量检测未通过 右脸遮挡程度过高 	提示用户请勿遮挡右脸颊
+223125 	chin contour is occlusion 	质量检测未通过 下巴遮挡程度过高 	提示用户请勿遮挡下巴
+223126 	nose is occlusion 	质量检测未通过 鼻子遮挡程度过高 	提示用户请勿遮挡鼻子
+223127 	mouth is occlusion 	质量检测未通过 嘴巴遮挡程度过高 	提示用户请勿遮挡嘴巴
+222901 	system busy 	参数校验初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222902 	system busy 	参数校验初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222903 	system busy 	参数校验初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222904 	system busy 	参数校验初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222905 	system busy 	接口初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222906 	system busy 	接口初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222907 	system busy 	缓存处理失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222908 	system busy 	缓存处理失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222909 	system busy 	缓存处理失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222910 	system busy 	数据存储处理失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222911 	system busy 	数据存储处理失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222912 	system busy 	数据存储处理失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222913 	system busy 	接口初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222914 	system busy 	接口初始化失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222915 	system busy 	后端服务连接失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222916 	system busy 	后端服务连接失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222304 	image size is too large 	图片尺寸太大 	请确保图片尺寸在1920x1080以下下
+223128 	group was deleting 	正在清理该用户组的数据 	请等该用户组清理完毕后再对该组进行操作
+222361 	system busy 	公安服务连接失败 	请重新尝试，若尝试多次无效，请提交工单咨询
+222046 	param[template_type] format error 	参数格式错误 	请参考接口文档修改
+222101 	param[merge_degree] format error 	参数格式错误 	请参考API说明文档，修改参数
+222102 	param[face_location] format error 	参数格式错误 	参考API说明文档，修改参数
+222307 	image illegal, reason: porn 	图片非法 鉴黄未通过 	请重新上传合法的图片
+222308 	image illegal, reason: sensitive person 	图片非法 含有政治敏感人物 	请重新上传合法的图片
+222211 	template image quality reject 	人脸融合失败 模板图质量不合格 	请检查模板图是否符合人脸融合文档中的质量要求
+222212 	merge face fail 	人脸融合失败 	请更换素材后重新尝试，如果持续出现此类错误，请提交工单
+223129 	face not forward 	人脸未面向正前方（人脸的角度信息大于30度） 	请使用面向正前方的人脸图片

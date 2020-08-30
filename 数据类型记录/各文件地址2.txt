@@ -1,0 +1,34 @@
+Cookie: .ASPXAUTH=9DC544C062EFE562112B1061A0EDFD17159D81017946991A6D91E0EF0A65C44668139A9E0909651AC098963D7038F24E1629FEA2C96354A7E63A4C91FD81A3B8C6461E8EBD774AFFD71B4D581B0B70685F76512E2E3B8169491B699C9D95FB76F3D66F44D9399506AC5DBF9280A75AE28E319054; ASP.NET_SessionId=qljfnafdtvbj3gqlxqcjrweh
+
+code:1,msg:Success,ver:2.1,data:IC_ID:1957456,CheckId:1957459,CheckInType:1,CheckinIndex:1,Code:691466,ChceckinCodeRefreshTime:300
+
+{"toUrl":"/Teacher/Home","success":true,"userType":2,"token":"d1e9bbd5-68e4-4764-9005-217a5d0b60fc"}
+http://bhzy.itolearn.com/Scripts/Interaction/beforeschool.js?_ver_=v2.2bete2.3.5
+
+' http://bhzy.itolearn.com/Weixin/myIndex
+' http://bhzy.itolearn.com/Weixin/Schedule
+' http://bhzy.itolearn.com/StuHomeWork/LatestHomework
+' http://bhzy.itolearn.com/Weixin/InteractiveClassroom?lessionid=1473556&scheduleid=136391&icid=1473555
+' http://bhzy.itolearn.com/Interaction/schooling?IC_ID=1489408
+' http://bhzy.itolearn.com/Teacher/teacherindex'教师端
+' http://bhzy.itolearn.com/Scripts/TeacherPreparationN/AddInstructional.js?_ver_=v2.2bete2.3.5
+' http://bhzy.itolearn.com/Teacher/TeacherSetting?tID=50223'教师个人设置
+' http://bhzy.itolearn.com/ManagerTask/TaskBefoer'改作业
+' http://bhzy.itolearn.com/ManagerTask/TaskPreClass'课前资料
+' http://bhzy.itolearn.com/TeacherPreparation/PrepareLessonList'备课
+' http://bhzy.itolearn.com/ManagerTask/TaskMessage'通知信息
+' http://bhzy.itolearn.com/Scripts/ManagerTask/TaskMessage.js?_ver_=v2.2bete2.3.5
+' http://bhzy.itolearn.com/TeacherPreparationN/AddInstructional'班级管理
+' http://bhzy.itolearn.com/TeacherPreparationN/getPartCourseClass'获取教师所有班级
+' http://bhzy.itolearn.com/Content/systemPro/html/index.html'云课堂控制台
+' http://bhzy.itolearn.com/Land/ldindex?ReturnUrl=%2fInteraction%2fschooling%3fIC_ID%3d1456688&IC_ID=1456688
+
+' OperID=tID
+
+
+{"code":1,"msg":"Success","ver":"2.1","data":{"IC_ID":1835836,"Lessons_ID":1835837,"CheckInType":1,"CheckId":1829746,"Schedule_Id":[466617,466618],"ToIC":true}}
+
+“{"info":{"OperID":50223,"OperName":"张国标","ClassName":null,"OperImgID":64201,"introduction":null,"CurrDate":"\/Date(1570860781317)\/"},"oper":{"ID":50223,"Name":"张国标","PY":null,"Code":"2018050102304","eMail":null,"Tele":null,"Password":"","Addres":null,"Status":true,"Sex":"男","Type":1,"PhotoAddress":"64201","Sign":null,"LoginDate":"\/Date(-62135596800000)\/","ClientID":"weixin","Device":null,"weixinID":"oUzLr1c0xLbPpe6Yky_CdAClD9EI","pwdStatus":1,"loginMode":0},"student":{"Operator_ID":50223,"Class_ID":44512,"P_ID":6439,"SC_ID":0,"S_Code":"2018050102304","S_IDNO":null,"S_Name":"张国标","S_NName":"张国标","S_SelfIintroduction":null,"S_Sex":"男","S_Birthday":"\/Date(-62135596800000)\/","S_Email":null,"S_Mobile":null,"S_Status":0}}”
+
+lessionid=1620114&amp;scheduleid=178556&amp;icid=1620113" class="status_4" schedule_id="178556"
+lessionid=1695736&amp;scheduleid=225022&amp;icid=1695735" class="status_4" schedule_id="225022"

@@ -1,0 +1,39 @@
+.版本 2
+
+' http://bhzy.itolearn.com/Weixin/myIndex
+' http://bhzy.itolearn.com/Weixin/Schedule
+' http://bhzy.itolearn.com/StuHomeWork/LatestHomework
+' http://bhzy.itolearn.com/Weixin/InteractiveClassroom?lessionid=1473556&scheduleid=136391&icid=1473555
+' http://bhzy.itolearn.com/Interaction/schooling?IC_ID=1489408
+' http://bhzy.itolearn.com/Teacher/teacherindex'教师端
+' http://bhzy.itolearn.com/Teacher/Home'教师端
+' http://bhzy.itolearn.com/Scripts/Interaction/beforeschool.js?_ver_=v2.2bete2.3.5
+' http://bhzy.itolearn.com/Scripts/TeacherPreparationN/AddInstructional.js?_ver_=v2.2bete2.3.5
+' http://bhzy.itolearn.com/Teacher/TeacherSetting?tID=50223'教师个人设置
+' http://bhzy.itolearn.com/ManagerTask/TaskBefoer'改作业
+' http://bhzy.itolearn.com/ManagerTask/TaskPreClass'课前资料
+' http://bhzy.itolearn.com/TeacherPreparation/PrepareLessonList'备课
+' http://bhzy.itolearn.com/ManagerTask/TaskMessage'通知信息
+' http://bhzy.itolearn.com/Scripts/ManagerTask/TaskMessage.js?_ver_=v2.2bete2.3.5
+' http://bhzy.itolearn.com/TeacherPreparationN/AddInstructional'班级管理
+' http://bhzy.itolearn.com/TeacherPreparationN/getPartCourseClass'获取教师所有班级
+' http://bhzy.itolearn.com/Content/systemPro/html/index.html'云课堂控制台
+' http://bhzy.itolearn.com/Land/ldindex?ReturnUrl=%2fInteraction%2fschooling%3fIC_ID%3d1456688&IC_ID=1456688
+
+' OperID=tID
+
+' :  d:\wwwroot\spoc_beihai\Views\Shared\_LayoutManager_new.cshtml
+' 120.24.38.245:8080
+
+' 获取签到列表
+' http://bhzy.itolearn.com/Checkin/GetIccList
+
+' 获取签到次数
+' http://bhzy.itolearn.com/Checkin/GetCheckinDetailsByStu
+
+' SQL:
+' select * from [dbo].[T_InteractionCurriculum] where TCLass_ID in(
+' select distinct TClass_ID from [dbo].[ClassStudentMap] where Operator_ID=@Operator_ID)
+' and IC_Password=@IC_Password and IC_Status=@IC_Status
+
+' xDY.Common.DAO.dao.ExecuteDataSet(DbCommand cmd) in E:\NET\代码\xDY.Common\dao\dao.cs:1152

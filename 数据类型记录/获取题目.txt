@@ -1,0 +1,41 @@
+Request URL:http://bhzy.itolearn.com/webios/getTestQuestionList
+Request Method:POST
+Status Code:200 OK
+Remote Address:171.111.154.207:80
+Response Headers
+view source
+Ali-Swift-Global-Savetime:1578019031
+Cache-Control:private
+Connection:keep-alive
+Content-Length:82614
+Content-Type:application/json; charset=utf-8
+Date:Fri, 03 Jan 2020 02:37:10 GMT
+EagleId:74fdbfa415780190308828405e
+Server:Tengine
+Timing-Allow-Origin:*
+Via:cache20.l2cn1851[222,200-0,M], cache20.l2cn1851[224,0], kunlun6.cn133[251,200-0,M], kunlun6.cn133[253,0]
+X-AspNet-Version:4.0.30319
+X-AspNetMvc-Version:4.0
+X-Cache:MISS TCP_MISS dirn:-2:-2
+X-Powered-By:ASP.NET
+X-Swift-CacheTime:0
+X-Swift-SaveTime:Fri, 03 Jan 2020 02:37:11 GMT
+Request Headers
+view source
+Accept:application/json, text/plain, */*
+Accept-Encoding:gzip, deflate
+Accept-Language:zh-CN,zh;q=0.8
+Connection:keep-alive
+Content-Length:17
+Content-Type:application/json;charset=UTF-8
+Cookie:ASP.NET_SessionId=kifg24wzrmasfzmk20n3dwxc; historyGO=2; .ASPXAUTH=560FA24C1BB11F8E4AB9439D25AB77DE1E455F46CC03057C4E1D7CA23BF74D991E4673A21BF3922D9FEAF042C5D16957D2CF741B8E54C0815B0939251D747EBF0DB5D1987C55FFA964719C2D149116C7BF3C4B47477CF46DF0A4E478A2A826263EA4DE0DD8F361E7BEBADACB5208EA348D4F2A60
+Host:bhzy.itolearn.com
+Origin:http://bhzy.itolearn.com
+Referer:http://bhzy.itolearn.com/Weixin/TestExam?tasklnfo=6298306&id=6297892&icid=6297889&scheduleid=262909&lessionid=6297890&sign=064c2ac1-10e7-4cf2-9704-31048c54c84d&type=1
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36
+Request Payload
+view source
+{CH_ID: 6323487}
+CH_ID
+:
+6323487

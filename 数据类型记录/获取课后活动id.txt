@@ -1,0 +1,70 @@
+请求网址:http://bhzy.itolearn.com/Weixin/partialItemClassJson?v=45
+请求方法:POST
+远程地址:116.253.29.229:80
+状态码:
+200
+版本:HTTP/1.1
+Referrer 政策:no-referrer-when-downgrade
+	
+请求信息
+{"applayType":3,"ic_id":"6297889","batchid":null,"schduleid":"262909","lessionid":"6297890"}
+响应头 (582 字节)	
+原始头
+Ali-Swift-Global-Savetime	
+1578911174
+Cache-Control	
+private
+Connection	
+keep-alive
+Content-Length	
+131
+Content-Type	
+application/json; charset=utf-8
+Date	
+Mon, 13 Jan 2020 10:26:14 GMT
+EagleId	
+74fd1d1515789111746927192e
+Server	
+Tengine
+Timing-Allow-Origin	
+*
+Via	
+cache48.l2cn1851[33,200-0,M], …00-0,M], kunlun1.cn1602[98,0]
+X-AspNet-Version	
+4.0.30319
+X-AspNetMvc-Version	
+4.0
+X-Cache	
+MISS TCP_MISS dirn:-2:-2
+X-Powered-By	
+ASP.NET
+X-Swift-CacheTime	
+0
+X-Swift-SaveTime	
+Mon, 13 Jan 2020 10:26:14 GMT
+请求头 (848 字节)	
+原始头
+Accept	
+application/json, text/plain, */*
+Accept-Encoding	
+gzip, deflate
+Accept-Language	
+zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Connection	
+keep-alive
+Content-Length	
+92
+Content-Type	
+application/json
+Cookie	
+ASP.NET_SessionId=whv2blinr51i…865479203C0E0D6AAE44; week=18
+Host	
+bhzy.itolearn.com
+Origin	
+http://bhzy.itolearn.com
+Referer	
+http://bhzy.itolearn.com/Weixi…scheduleid=262909&icid=6297889
+User-Agent	
+Mozilla/5.0 (Windows NT 10.0; …) Gecko/20100101 Firefox/71.0
+返回结果
+{"LessonsID":6297890,"ICID":6297889,"SchdelueID":262909,"Sign":"258b2f62-f674-471e-9689-e5b405840935","ApplayType":null,"items":[]}

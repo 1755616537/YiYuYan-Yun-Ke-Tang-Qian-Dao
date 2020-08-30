@@ -1,0 +1,1 @@
+{"error_code":0,"error_msg":"SUCCESS","log_id":1545899955941,"timestamp":1581342153,"cached":0,"result":{"face_token":"c725e18c87dbeb032ff4e82d214b759b","location":{"left":110.74,"top":114.34,"width":69,"height":73,"rotation":-2}}}

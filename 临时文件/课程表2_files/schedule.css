@@ -1,0 +1,147 @@
+.header>h1{font-weight:normal;font-size:1.6rem;line-height:normal}
+i{font-style:normal}
+#weeks{display:block;margin-top:5px}
+#weeks>span{padding:0 4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2;}
+#Year{display:block;text-align:center;font-size:12px;}
+#weeks i.icon{ margin-left:7px}
+#content{position:relative;background-color:transparent;word-break:break-all}
+.mui-scroll{height:100%;background-size:cover}
+table{border-collapse:collapse; text-align:center;width:100%;height:100%}
+table td{width:13%;padding:1px}
+table th.week{width:13.5%}
+table th.date{width:6.5%;border-left:0}
+table th span{display:block;}
+table th{background-color:rgba(255,255,255,.7);border-color:#ccc;color:#343334;font-weight:lighter!important}
+th,td{border:1px solid #ccc}
+table .weeks{height:8%}
+/*未上课*/
+td>a{background:#ec9e5e;width:100%;height:100%;position:relative;display:block}
+a span.info{text-align:center;font-size:11px;color:#fff;position:absolute;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);display:block}
+a span.info span{display:-webkit-box; -webkit-box-orient:horizontal; box-orient:horizontal; text-overflow:ellipsis; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; }
+td>a span.mui-badge{position:absolute;top:-5px;right:-4px;z-index:20;font-size:10px;padding: 1px 2px 0;line-height:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:18.5px;}
+#msclass>a.status_no{background: #ec9e5e;}
+/*上课中*/
+#msclass>a.status_1,td>a.status_1{background:#ec9e5e}
+/*已下课*/
+#msclass>a.status_2,td>a.status_2{background:#4fdc95}
+#msclass>a.status_3,td>a.status_3{background:#8f8f92}
+#msclass>a.status_4,td>a.status_4{background:#8f8f92;color:#fff;}
+.mui-popup.loading .mui-popup-inner{    -webkit-border-radius: 13px;border-radius: 13px;}
+.mui-popup.loading .mui-popup-inner:after{ content:normal}
+.mui-popup.loading .mui-popup-buttons{visibility:hidden;}
+.mui-popup.loading .mui-popup-text{ position:relative; padding-top:50px; margin:5px 0}
+.mui-popup.loading .mui-popup-text:before{position: absolute;top:0;left:50%; margin-left:-23px;display: block;width: 46px;height: 46px;-webkit-transform-origin: 50%;transform-origin: 50%;-webkit-animation: spinner-spin 1s step-end infinite;animation: spinner-spin 1s step-end infinite;
+    content: ''; background:url('data:image/svg+xml;charset=utf-8,<svg viewBox=\'0 0 120 120\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'><defs><line id=\'l\' x1=\'60\' x2=\'60\' y1=\'7\' y2=\'27\' stroke=\'%236c6c6c\' stroke-width=\'11\' stroke-linecap=\'round\'/></defs><g><use xlink:href=\'%23l\' opacity=\'.27\'/><use xlink:href=\'%23l\' opacity=\'.27\' transform=\'rotate(30 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.27\' transform=\'rotate(60 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.27\' transform=\'rotate(90 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.27\' transform=\'rotate(120 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.27\' transform=\'rotate(150 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.37\' transform=\'rotate(180 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.46\' transform=\'rotate(210 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.56\' transform=\'rotate(240 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.66\' transform=\'rotate(270 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.75\' transform=\'rotate(300 60,60)\'/><use xlink:href=\'%23l\' opacity=\'.85\' transform=\'rotate(330 60,60)\'/></g></svg>');
+    background-repeat: no-repeat;background-position: 50%;background-size: 100%;}
+ /*给当前天加样式*/
+.isok{position: absolute;margin-top: -35px;margin-left: -13px;z-index: 10;display: inline-block;width: 32px;height: 32px;background: url("/Content/NewWXImg/newWXIcon1.png") no-repeat;background-size:700px auto;background-position: -249px -10px;}
+.huan{background: url("/Content/NewWXImg/huan.png") no-repeat;display: inline-block;width: 26px;height: 26px;background-size: contain; margin:9px 5px}
+.iconm-Sign{background-position: -136px  -16px; margin:8px 5px;width: 28px;height: 28px;}
+/*多节课弹出样式*/
+.maxcstop{background-color:rgba(0,0,0,0.5);position:fixed;height:100%;width:100%;z-index:99;top:0px;left:0px;display:none;}
+#msclass{position:fixed;height:100%;width:100%;z-index:100;top:0px;left:0px;padding:30px;}
+#msclass>a{background:#03a9f4;width:54px;height:85px;position:relative;-webkit-border-radius:3px 3px 15px 3px;border-radius:3px 3px 16px 3px;display:block;float:left;
+           padding:3px;margin:5px;border:solid 2px #ccc;color:#fff;overflow:hidden;font-size:1.2rem;z-index:110;}
+           
+/*mui弹出框重置高度*/
+.mui-popup{top:30%!important;}
+
+#gray_mask {
+    position: fixed;
+    top: 50%;
+    height: 180px;
+    width: 260px;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -130px;
+    z-index: 888;
+    background: #fff;
+    padding: 15px 10px 10px 10px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.popmasker {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #888;
+    opacity: .6;
+    z-index: 777;
+    top:0
+}
+
+.masker h3, .lookCodes h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottomerweima {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+    .bottomerweima span {
+        margin-right: 10px;
+        line-height: 25px;
+        background: #0584f9;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+        padding: 0 7px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+        .bottomerweima span:last-child {
+            margin-right: 0;
+        }
+
+.lookCodes {
+    position: fixed;
+    top: 50%;
+    height: 200px;
+    width: 250px;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -125px;
+    z-index: 890;
+    background: #fff;
+    padding-top: 30px;
+    padding: 30px 20px 10px 20px;
+}
+
+    .lookCodes img {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+.bottomerweima span.cancels {
+    color: #666;
+    background: #e9e9e9;
+}
+.maskerSign img {
+    display: inline-block;
+    width: 43px;
+    height: 37px;
+}
+
+.maskerSign h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333
+}
+.maskerSign p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999999
+}
+.bottomerweima span.cancels {
+    color: #666;
+    background: #e9e9e9;
+}
